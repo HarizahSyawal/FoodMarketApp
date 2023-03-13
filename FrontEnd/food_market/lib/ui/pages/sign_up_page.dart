@@ -132,7 +132,7 @@ class _SignUpPageState extends State<SignUpPage> {
             margin: EdgeInsets.only(top: 24),
             height: 45,
             padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-            child: RaisedButton(
+            child: ElevatedButton(
               onPressed: () {
                 Get.to(AddressPage(
                     User(
@@ -142,10 +142,12 @@ class _SignUpPageState extends State<SignUpPage> {
                     passwordController.text,
                     pictureFile));
               },
-              elevation: 0,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8)),
-              color: mainColor,
+              style: ElevatedButton.styleFrom(
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)),
+                backgroundColor: mainColor,
+              ),
               child: Text(
                 'Continue',
                 style: GoogleFonts.poppins(

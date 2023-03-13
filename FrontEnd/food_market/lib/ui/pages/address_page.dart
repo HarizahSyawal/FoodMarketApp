@@ -148,7 +148,7 @@ class _AddressPageState extends State<AddressPage> {
                 ? Center(
                     child: loadingIndicator,
                   )
-                : RaisedButton(
+                : ElevatedButton(
                     onPressed: () async {
                       User user = widget.user.copyWith(
                           phoneNumber: phoneController.text,
@@ -192,10 +192,12 @@ class _AddressPageState extends State<AddressPage> {
                         });
                       }
                     },
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
-                    color: mainColor,
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                      backgroundColor: mainColor,
+                    ),
                     child: Text(
                       'Sign Up Now',
                       style: GoogleFonts.poppins(

@@ -343,7 +343,7 @@ class _PaymentPageState extends State<PaymentPage> {
                   margin: EdgeInsets.symmetric(horizontal: defaultMargin),
                   height: 45,
                   width: double.infinity,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () async {
                       setState(() {
                         isLoading = true;
@@ -378,10 +378,12 @@ class _PaymentPageState extends State<PaymentPage> {
                             ));
                       }
                     },
-                    elevation: 0,
-                    color: mainColor,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      backgroundColor: mainColor,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                    ),
                     child: Text(
                       "Checkout Now",
                       style:

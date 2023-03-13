@@ -71,7 +71,7 @@ class _SignInPageState extends State<SignInPage> {
             padding: EdgeInsets.symmetric(horizontal: defaultMargin),
             child: isLoading
                 ? loadingIndicator
-                : RaisedButton(
+                : ElevatedButton(
                     onPressed: () async {
                       setState(() {
                         isLoading = true;
@@ -107,10 +107,12 @@ class _SignInPageState extends State<SignInPage> {
                         });
                       }
                     },
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
-                    color: mainColor,
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                      backgroundColor: mainColor,
+                    ),
                     child: Text(
                       'Sign In',
                       style: GoogleFonts.poppins(
@@ -128,14 +130,16 @@ class _SignInPageState extends State<SignInPage> {
                     size: 45,
                     color: mainColor,
                   )
-                : RaisedButton(
+                : ElevatedButton(
                     onPressed: () {
                       Get.to(SignUpPage());
                     },
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)),
-                    color: greyColor,
+                    style: ElevatedButton.styleFrom(
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)),
+                      backgroundColor: greyColor,
+                    ),
                     child: Text(
                       'Create New Account',
                       style: GoogleFonts.poppins(
