@@ -19384,8 +19384,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\foodmarket-backend\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\foodmarket-backend\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! /Applications/XAMPP/xamppfiles/htdocs/FoodMarketApp/BackEnd/foodmarket-backend-master/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/XAMPP/xamppfiles/htdocs/FoodMarketApp/BackEnd/foodmarket-backend-master/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })
